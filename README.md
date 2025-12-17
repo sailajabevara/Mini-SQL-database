@@ -1,5 +1,3 @@
-README.md
-
 # Mini SQL Database (In-Memory)
 
 ## Project Overview
@@ -19,15 +17,14 @@ and executed internally without using a real database.
 - Graceful error handling
 
 ## Project Structure
+```text
 Mini-SQL-database/
-│
 ├── engine.py
 ├── parser.py
 ├── cli.py
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-│
 └── data/
     ├── employees.csv
     ├── users.csv
