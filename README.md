@@ -1,11 +1,11 @@
 # Mini SQL Database (In-Memory)
 
 ## Project Overview
-This project is a simplified, in-memory SQL query engine built using Python.
-It loads data from CSV files and allows users to execute basic SQL queries
+This project is a simplified, in-memory SQL query engine built using Python.  
+It loads data from CSV files and allows users to execute basic SQL queries  
 such as SELECT, WHERE, and COUNT through a command-line interface.
 
-The purpose of this project is to understand how SQL queries are parsed
+The purpose of this project is to understand how SQL queries are parsed  
 and executed internally without using a real database.
 
 ## Features
@@ -17,19 +17,19 @@ and executed internally without using a real database.
 - Graceful error handling
 
 ## Project Structure
-```text
-Mini-SQL-database/
+```
+Mini SQL Database/
+├── cli.py
 ├── engine.py
 ├── parser.py
-├── cli.py
 ├── README.md
 ├── requirements.txt
-├── .gitignore
+├── __pycache__/
 └── data/
     ├── employees.csv
-    ├── users.csv
-    └── products.csv
-
+    ├── products.csv
+    └── users.csv
+```
 
 ## Setup and Usage
 
@@ -38,22 +38,26 @@ Mini-SQL-database/
 - No external libraries required (only Python standard library)
 
 ### Run the Application
+```
 python cli.py
+```
 
 When prompted, enter the CSV file path, for example:
+```
 data/employees.csv
+```
 
 ## Supported SQL Grammar
 
 Supported Queries:
-SELECT * FROM table_name;
-SELECT column1, column2 FROM table_name;
-SELECT * FROM table_name WHERE column > value;
-SELECT COUNT(*) FROM table_name;
-SELECT COUNT(column_name) FROM table_name WHERE column = value;
+- SELECT * FROM table_name;
+- SELECT column1, column2 FROM table_name;
+- SELECT * FROM table_name WHERE column > value;
+- SELECT COUNT(*) FROM table_name;
+- SELECT COUNT(column_name) FROM table_name WHERE column = value;
 
 Supported WHERE Operators:
-=  !=  >  <  >=  <=
+- =  !=  >  <  >=  <=
 
 Not Supported:
 - JOIN
@@ -74,18 +78,3 @@ Not Supported:
 
 ## License
 This project is for educational purposes only.
-
-
-.gitignore
-
-__pycache__/
-*.pyc
-*.pyo
-.env
-.DS_Store
-
-
-requirements.txt
-
-# No external dependencies required
-# Uses only Python standard library
