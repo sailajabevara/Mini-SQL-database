@@ -20,16 +20,19 @@ and executed internally without using a real database.
 
 ## Project Structure
 Mini-SQL-database/
+│
 ├── engine.py
 ├── parser.py
 ├── cli.py
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
+│
 └── data/
     ├── employees.csv
     ├── users.csv
     └── products.csv
+
 
 ## Setup and Usage
 
