@@ -1,9 +1,8 @@
-========================
 README.md
-========================
+
 # Mini SQL Database (In-Memory)
 
-##  Project Overview
+## Project Overview
 This project is a simplified, in-memory SQL query engine built using Python.
 It loads data from CSV files and allows users to execute basic SQL queries
 such as SELECT, WHERE, and COUNT through a command-line interface.
@@ -11,9 +10,7 @@ such as SELECT, WHERE, and COUNT through a command-line interface.
 The purpose of this project is to understand how SQL queries are parsed
 and executed internally without using a real database.
 
----
-
-##  Features
+## Features
 - Load CSV data into memory
 - Store data as a list of dictionaries (one dictionary per row)
 - Parse a subset of SQL queries
@@ -21,26 +18,20 @@ and executed internally without using a real database.
 - Interactive command-line interface (REPL)
 - Graceful error handling
 
----
-
-##  Project Structure
+## Project Structure
 Mini-SQL-database/
-│
-├── engine.py        # CSV loader and query execution engine
-├── parser.py        # SQL parser
-├── cli.py           # Command-line interface (REPL)
-├── requirements.txt
+├── engine.py
+├── parser.py
+├── cli.py
 ├── README.md
+├── requirements.txt
 ├── .gitignore
-│
 └── data/
     ├── employees.csv
     ├── users.csv
     └── products.csv
 
----
-
-##  Setup and Usage
+## Setup and Usage
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -52,11 +43,7 @@ python cli.py
 When prompted, enter the CSV file path, for example:
 data/employees.csv
 
----
-
-##  Supported SQL Grammar
-
-This engine supports a limited subset of SQL.
+## Supported SQL Grammar
 
 Supported Queries:
 SELECT * FROM table_name;
@@ -75,37 +62,22 @@ Not Supported:
 - Multiple WHERE conditions
 - INSERT, UPDATE, DELETE
 
----
-
-##  Sample Datasets
-
-The project includes multiple CSV files used for testing:
-
-- employees.csv  
-  Kaggle-derived employee dataset (15 rows)
-
-- users.csv  
-  Simple user dataset for validating SELECT and WHERE queries
-
-- products.csv  
-  Sample product dataset for testing SELECT and COUNT operations
-
----
+## Sample Datasets
+- employees.csv – Kaggle-derived employee dataset (15 rows)
+- users.csv – Small user dataset
+- products.csv – Sample product dataset
 
 ## Error Handling
-- Invalid SQL syntax produces a clear error message
-- Querying non-existent columns raises informative errors
-- Unsupported operations are handled gracefully
+- Invalid SQL syntax produces clear error messages
+- Querying non-existent columns is handled gracefully
+- Unsupported operations do not crash the application
 
----
-
-##  License
+## License
 This project is for educational purposes only.
 
 
-========================
 .gitignore
-========================
+
 __pycache__/
 *.pyc
 *.pyo
@@ -113,8 +85,7 @@ __pycache__/
 .DS_Store
 
 
-========================
 requirements.txt
-========================
+
 # No external dependencies required
 # Uses only Python standard library
